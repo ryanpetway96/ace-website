@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Support — ACE Golf</title>
+  <meta name="description" content="Get help with the ACE Golf app.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;600;700&display=swap">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/png" href="/media/favicon.png">
+  <link rel="apple-touch-icon" href="/media/apple-touch-icon.png">
+  <meta name="theme-color" content="#030c06">
+</head>
+<body class="page-doc">
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="index.html"><span class="brand-mark">ACE</span><span class="brand-sub">GOLF</span></a>
+      <nav class="nav" aria-label="Main">
+        <a href="support.html" aria-current="page">Support</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="terms.html">Terms</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <article class="doc">
+      <h1>Support</h1>
+      <p class="updated">We're a small team in Rockford, Illinois, and we read every message.</p>
+
+      <div class="contact-card">
+        <p style="margin:0 0 6px;color:var(--muted)">Email us</p>
+        <p class="email" style="margin:0"><a href="mailto:support@acegolftechnologies.com">support@acegolftechnologies.com</a></p>
+        <p style="margin:10px 0 0;color:var(--muted)">We usually reply within 1–2 business days. In the app, you can also go to Settings → Help &amp; Feedback.</p>
+      </div>
+
+      <h2>Common questions</h2>
+
+      <details>
+        <summary>I forgot my password</summary>
+        <p>On the sign-in screen, tap "Forgot password?", enter your email, and we'll send a 6-digit code to reset it. Check your spam folder if it doesn't show up within a minute.</p>
+      </details>
+
+      <details>
+        <summary>How do I cancel or change my subscription?</summary>
+        <p>Subscriptions are managed by Apple. On your iPhone, open Settings → your name → Subscriptions → ACE, then change or cancel. Cancel at least 24 hours before your renewal date to avoid the next charge. Deleting the app doesn't cancel the subscription.</p>
+      </details>
+
+      <details>
+        <summary>I got a new phone. How do I get my subscription back?</summary>
+        <p>Sign in with your ACE account, then go to Settings → Premium Membership and tap "Restore Purchases". Use the same Apple ID you subscribed with.</p>
+      </details>
+
+      <details>
+        <summary>Will my rounds and bag come with me to a new phone?</summary>
+        <p>Yes. Your rounds, bag, stats and what Ace has learned are backed up to your account. Sign in on the new phone and they come back.</p>
+      </details>
+
+      <details>
+        <summary>How do I cancel a tee time?</summary>
+        <p>Open the booking from your Me tab or the Play tab and tap Cancel. If you cancel at least 24 hours before your tee time, the ACE booking fee is refunded in full.</p>
+      </details>
+
+      <details>
+        <summary>How do I report or block someone?</summary>
+        <p>Tap the ⋯ on any post, comment, profile or conversation and choose Report or Block. Blocked golfers' posts, comments and messages are hidden from you, and they aren't told. We review every report within 24 hours. You can see and undo blocks in Settings → Block List.</p>
+      </details>
+
+      <details>
+        <summary>How do I delete my account?</summary>
+        <p>In the app, go to Settings → Delete Account. This permanently deletes your account and the data tied to it. If you have a subscription, cancel it in your iPhone's Settings too.</p>
+      </details>
+
+      <details>
+        <summary>Can I get a copy of my data?</summary>
+        <p>Yes. Email <a href="mailto:support@acegolftechnologies.com">support@acegolftechnologies.com</a> from the email on your account and we'll send it to you.</p>
+      </details>
+
+      <details>
+        <summary>Ace gave me a bad club recommendation</summary>
+        <p>Ace learns your real distances from the shots you log, so its advice gets better the more you play. Make sure your bag distances are right in My Bag, and keep logging shots. Ace is guidance; you always make the final call.</p>
+      </details>
+
+      <h2>For golf courses</h2>
+      <p>Interested in bringing ACE, LiDAR green maps or online tee times to your course? Email <a href="mailto:info@acegolftechnologies.com">info@acegolftechnologies.com</a>.</p>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <span>© 2026 ACE Golf Technologies LLC · Rockford, Illinois</span>
+      <nav aria-label="Footer">
+        <a href="support.html">Support</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms of Service</a>
+      </nav>
+    </div>
+  </footer>
+  <button class="to-top" type="button" aria-label="Back to top" hidden>↑</button>
+  <script>
+    (function () {
+      var btn = document.querySelector('.to-top');
+      var onScroll = function () { btn.hidden = window.scrollY < 600; };
+      window.addEventListener('scroll', onScroll, { passive: true });
+      onScroll();
+      btn.addEventListener('click', function () {
+        var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+        window.scrollTo({ top: 0, behavior: reduce ? 'auto' : 'smooth' });
+      });
+    })();
+  </script>
+</body>
+</html>
