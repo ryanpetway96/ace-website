@@ -273,15 +273,14 @@ a:hover { text-decoration: none; }
 .format-list span { color: var(--muted); font-size: 16px; }
 .price-from { display: block; margin: 0 0 2px !important; font-size: 15px !important; text-transform: uppercase; letter-spacing: 1.5px; }
 .price-text { font-size: 44px; padding-top: 22px; }
-.table-title { font-family: var(--font-display); font-weight: 400; font-size: 36px; letter-spacing: 0.5px; margin: 56px 0 14px; }
+.table-title { font-family: var(--font-display); font-weight: 400; font-size: 36px; letter-spacing: 0.5px; line-height: 1; margin: 56px 0 10px; }
+.table-title + .lede.narrow { margin: 0 auto 18px; font-size: 17px; }
 .table-scroll { overflow-x: auto; border: 1px solid rgba(255,255,255,0.12); border-radius: 16px; background: rgba(0,0,0,0.62); text-align: left; }
-.addons { width: 100%; border-collapse: collapse; font-size: 16px; min-width: 680px; }
+.addons { width: 100%; border-collapse: collapse; font-size: 16px; min-width: 560px; }
 .addons th, .addons td { padding: 13px 16px; border-bottom: 1px solid rgba(255,255,255,0.08); vertical-align: top; }
 .addons thead th { color: var(--muted); font-size: 13px; letter-spacing: 1px; text-transform: uppercase; font-weight: 700; }
 .addons tbody th { color: var(--ink); font-weight: 700; }
 .addons td { color: #d4e0d8; }
-.addons td:nth-child(4), .addons td:nth-child(5), .addons thead th:nth-child(4), .addons thead th:nth-child(5) { white-space: nowrap; text-align: right; font-variant-numeric: tabular-nums; }
-.addons td[colspan] { text-align: right; }
 .addons tbody tr:last-child th, .addons tbody tr:last-child td { border-bottom: 0; }
 .price-notes { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 14px; margin-top: 16px; text-align: left; }
 .founding {
