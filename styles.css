@@ -38,9 +38,12 @@ a:hover { text-decoration: none; }
 .site-header, .site-footer { position: relative; z-index: 2; background: var(--bg); }
 
 /* Full-width section bands, tinted glass over the moving course, alternating tones edge to edge. */
-.section { position: relative; z-index: 1; width: 100%; background: rgba(3,12,6,0.74); }
-.section.alt { background: rgba(3,12,6,0.6); border-top: 1px solid rgba(255,255,255,0.06); border-bottom: 1px solid rgba(255,255,255,0.06); }
-.section.final { background: radial-gradient(ellipse at center, rgba(16,185,129,0.16), transparent 65%), rgba(3,12,6,0.7); }
+.section { position: relative; z-index: 1; width: 100%; background: rgba(3,12,6,0.56); }
+.section.alt { background: rgba(3,12,6,0.44); border-top: 1px solid rgba(255,255,255,0.06); border-bottom: 1px solid rgba(255,255,255,0.06); }
+.section.final { background: radial-gradient(ellipse at center, rgba(16,185,129,0.18), transparent 65%), rgba(3,12,6,0.52); }
+/* The tint is light enough to see the course, so big text gets a soft shadow to stay crisp. */
+.section h2, .section .lede, .hero h1, .hero .lede { text-shadow: 0 2px 14px rgba(0,0,0,0.55); }
+.row-text > p, .row-text > .ticks li, .hero .proof, .proof-line { text-shadow: 0 1px 8px rgba(0,0,0,0.6); }
 
 /* The course flyover stays fixed behind the whole page; the hero shows it clearest. */
 .hero {
@@ -52,7 +55,7 @@ a:hover { text-decoration: none; }
 }
 .hero-video { position: fixed; inset: 0; z-index: 0; background: var(--bg); }
 .hero-video video { width: 100%; height: 100%; object-fit: cover; display: block; }
-.hero-video::after { content: ""; position: absolute; inset: 0; background: rgba(3,12,6,0.4); }
+.hero-video::after { content: ""; position: absolute; inset: 0; background: rgba(3,12,6,0.28); }
 .hero-inner { position: relative; z-index: 1; width: 100%; }
 .scroll-hint {
   position: absolute; z-index: 1; left: 50%; bottom: 18px; transform: translateX(-50%);
@@ -257,12 +260,6 @@ a:hover { text-decoration: none; }
 .foot-note { margin: 10px 0 0; font-size: 15px; }
 
 /* ── Course surveys page ─────────────────────────────────────────────── */
-/* A lighter tint than the home page, so more of the course shows through. */
-.page-surveys .section { background: rgba(3,12,6,0.56); }
-.page-surveys .section.alt { background: rgba(3,12,6,0.44); }
-.page-surveys .section.final { background: radial-gradient(ellipse at center, rgba(16,185,129,0.18), transparent 65%), rgba(3,12,6,0.52); }
-.page-surveys .hero-video::after { background: rgba(3,12,6,0.28); }
-.page-surveys .section h2, .page-surveys .section .lede, .page-surveys .hero h1, .page-surveys .hero .lede { text-shadow: 0 2px 14px rgba(0,0,0,0.55); }
 .page-hero { min-height: calc(78vh - 70px); min-height: calc(78svh - 70px); }
 .page-hero h1 { max-width: 16ch; }
 .proof-line { color: var(--muted); font-size: 17px; margin: 0; max-width: 60ch; }
