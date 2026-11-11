@@ -257,6 +257,12 @@ a:hover { text-decoration: none; }
 .foot-note { margin: 10px 0 0; font-size: 15px; }
 
 /* ── Course surveys page ─────────────────────────────────────────────── */
+/* A lighter tint than the home page, so more of the course shows through. */
+.page-surveys .section { background: rgba(3,12,6,0.56); }
+.page-surveys .section.alt { background: rgba(3,12,6,0.44); }
+.page-surveys .section.final { background: radial-gradient(ellipse at center, rgba(16,185,129,0.18), transparent 65%), rgba(3,12,6,0.52); }
+.page-surveys .hero-video::after { background: rgba(3,12,6,0.28); }
+.page-surveys .section h2, .page-surveys .section .lede, .page-surveys .hero h1, .page-surveys .hero .lede { text-shadow: 0 2px 14px rgba(0,0,0,0.55); }
 .page-hero { min-height: calc(78vh - 70px); min-height: calc(78svh - 70px); }
 .page-hero h1 { max-width: 16ch; }
 .proof-line { color: var(--muted); font-size: 17px; margin: 0; max-width: 60ch; }
